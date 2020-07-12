@@ -1,0 +1,26 @@
+.navbar {
+  background-color: rgb(63, 61, 86);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar a {
+  color: #fff !important;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: rgb(219, 219, 219) !important;
+}
+
+.username {
+  color: #fff;
+  padding-left: 10px;
+}
+
+.navbar-section {
+  margin-left: auto !important;
+  flex: unset !important;
+}

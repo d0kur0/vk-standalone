@@ -1,9 +1,9 @@
 {
   "private": true,
-  "name": "electron-react-typescript",
-  "productName": "Application name",
+  "name": "vk-standalone",
+  "productName": "VK standalone",
   "version": "1.0.0",
-  "repository": "https://github.com/LoliE1ON/sftp-client.git",
+  "repository": "",
   "author": {
     "name": "E1ON",
     "email": "trohimovkavad@gmail.com"
@@ -13,7 +13,7 @@
   "scripts": {
     "dev": "concurrently npm:react-autobuild npm:electron-start-dev",
     "start": "npm-run-all --serial react-build electron-start",
-    "lint": "echo \"No linting configured\"",
+    "lint": "eslint ./src --ext .jsx,.ts,.js",
     "react-autobuild": "rollup -c -w",
     "react-build": "rollup -c",
     "electron-start": "electron-forge start",
@@ -27,7 +27,7 @@
   "config": {
     "forge": {
       "packagerConfig": {
-        "icon": "public/favicon.ico"
+        "icon": "./public/favicon.png"
       },
       "makers": [
         {
@@ -54,9 +54,23 @@
     }
   },
   "dependencies": {
+    "@rollup/plugin-typescript": "^5.0.1",
+    "@types/react-redux": "^7.1.9",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/redux": "^3.6.0",
+    "@types/redux-logger": "^3.0.8",
+    "@types/redux-thunk": "^2.1.0",
+    "electron-oauth-vk": "^0.0.1",
     "electron-reload": "^1.5.0",
     "react": "^16.13.0",
-    "react-dom": "^16.13.0"
+    "react-dom": "^16.13.0",
+    "react-icons": "^3.10.0",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "spectre.css": "^0.5.9"
   },
   "devDependencies": {
     "@babel/core": "^7.8.7",
@@ -75,7 +89,6 @@
     "@electron-forge/maker-zip": "6.0.0-beta.51",
     "@rollup/plugin-babel": "^5.0.2",
     "@rollup/plugin-commonjs": "^11.0.2",
-    "@rollup/plugin-html": "^0.1.1",
     "@rollup/plugin-node-resolve": "^7.1.1",
     "@types/node": "^13.7.7",
     "@types/react": "^16.9.23",

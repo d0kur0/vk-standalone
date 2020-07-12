@@ -1,0 +1,36 @@
+.sidebar {
+  height: 100vh;
+  background-color: rgb(63, 61, 86);
+  border-right: 1px solid rgb(82, 80, 110);
+}
+
+.sidebar ul,
+.sidebar ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.sidebar ul li a > svg {
+  margin-right: 10px;
+}
+
+.sidebar ul li a {
+  flex: 1 1 0;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  padding: 0 20px;
+  height: 50px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background-color: rgb(75, 72, 100);
+}

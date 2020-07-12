@@ -4,12 +4,8 @@
     "module": "esnext",
     "moduleResolution": "node",
     "jsx": "preserve",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "strict": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "strict": false,
     "noEmit": true,
     "allowJs": true,
     "skipLibCheck": true,
